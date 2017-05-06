@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.musicplayer.PlayActivity">
+
+    <TextView
+        android:id="@+id/label_catalogue"
+        style="@style/LabelStyle"
+        android:text="@string/catalogue"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_below="@+id/label_catalogue"
+        android:id="@+id/song_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="we are the champions"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_below="@+id/song_title2"
+        android:id="@+id/song_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="we will rock you"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/play_song"
+        android:layout_below="@id/song_title"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:src="@drawable/play"/>
+
+    <ImageView
+        android:id="@+id/details"
+        android:layout_toRightOf="@id/play_song"
+        android:layout_below="@id/song_title"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:src="@drawable/details"/>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:src="@drawable/search"
+        android:layout_below="@+id/song_title"
+        android:layout_toEndOf="@+id/details" />
+
+    <ImageView
+        android:id="@+id/list"
+        android:layout_toRightOf="@id/search"
+        android:layout_below="@id/song_title"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:src="@drawable/list"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="feature_play">Play Music</string>
+    <string name="feature_search">Search</string>
+    <string name="feature_favorites">Favorites</string>
+    <string name="feature_playlist">Playlist Creator</string>
+    <string name="detail">Details</string>
+    <string name="catalogue">catalogue</string>
+</resources>
