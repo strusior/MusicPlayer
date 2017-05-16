@@ -13,39 +13,39 @@
     <TextView
         android:id="@+id/label_catalogue"
         style="@style/LabelStyle"
-        android:text="@string/catalogue"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:text="@string/catalogue" />
 
     <TextView
-        android:layout_below="@+id/label_catalogue"
         android:id="@+id/song_title2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="we are the champions"
-        android:padding="10dp"/>
+        android:layout_below="@+id/label_catalogue"
+        android:padding="10dp"
+        android:text="we are the champions" />
 
     <TextView
-        android:layout_below="@+id/song_title2"
         android:id="@+id/song_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="we will rock you"
-        android:padding="10dp"/>
+        android:layout_below="@+id/song_title2"
+        android:padding="10dp"
+        android:text="we will rock you" />
 
     <ImageView
         android:id="@+id/play_song"
-        android:layout_below="@id/song_title"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_below="@id/song_title"
         android:padding="10dp"
         android:src="@drawable/play"/>
 
     <ImageView
         android:id="@+id/details"
-        android:layout_toRightOf="@id/play_song"
-        android:layout_below="@id/song_title"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_below="@id/song_title"
+        android:layout_toRightOf="@id/play_song"
         android:padding="10dp"
         android:src="@drawable/details"/>
 
@@ -53,20 +53,34 @@
         android:id="@+id/search"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:padding="10dp"
-        android:src="@drawable/search"
         android:layout_below="@+id/song_title"
-        android:layout_toEndOf="@+id/details" />
+        android:layout_toEndOf="@+id/details"
+        android:padding="10dp"
+        android:src="@drawable/search" />
 
     <ImageView
         android:id="@+id/list"
-        android:layout_toRightOf="@id/search"
-        android:layout_below="@id/song_title"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_below="@id/song_title"
+        android:layout_toRightOf="@id/search"
         android:padding="10dp"
         android:src="@drawable/list"/>
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list"
+        android:paddingTop="30dp"
+        android:text="
+            DESCRIPTION OF ACTIVITY
+            This is music catalogue from which user choses
+            songs to be played. Its features are:
+            - When clicking on play button it redirects to main
+            screen where currently played song is displayed
+            - Allows to view details of each song
+            - Magnifying glass icon redirects to search screen
+            - List icon redirects to list creator screen" />
 
 </RelativeLayout>

@@ -11,9 +11,9 @@
     tools:context="com.example.android.musicplayer.FavoritesActivity">
 
     <TextView
-        android:text="@string/feature_favorites"
         style="@style/LabelStyle"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:text="@string/feature_favorites" />
 
     <TextView
         android:id="@+id/addtofav"
@@ -22,5 +22,20 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="Add to favorites"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addtofav"
+        android:paddingBottom="30dp"
+        android:text="
+            DESCRIPTION OF ACTIVITY
+            Screen displaying favorite songs.
+            List of favorite songs should be based on
+            frequency of choosing from catalogue.
+            Also there is an option to manually add a song
+            to favorites list. 'Add to favorites' button
+            allows that - it redirects to catalogue from
+            which user can choose song he wants to add." />
 
 </RelativeLayout>

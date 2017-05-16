@@ -11,9 +11,9 @@
     tools:context="com.example.android.musicplayer.ListActivity">
 
     <TextView
-       android:text="@string/feature_playlist"
        style="@style/LabelStyle"
-       android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/feature_playlist" />
 
 
     <TextView
@@ -23,5 +23,16 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="Add to playlist"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addtolist"
+        android:paddingBottom="30dp"
+        android:text="
+            DESCRIPTION OF ACTIVITY
+            Allows to create playlists. To choose a song
+            user wants to add to playlist there is a button
+            at the bottom which redirects to catalogue." />
 
 </RelativeLayout>

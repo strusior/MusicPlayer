@@ -4,8 +4,8 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicplayer.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.example.android.musicplayer.MainActivity">
 
     <TextView
         android:id="@+id/play"
@@ -40,8 +40,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="NOW PLAYING"
-            android:padding="40dp"/>
+            android:padding="40dp"
+            android:text="NOW PLAYING" />
 
         <TextView
             android:id="@+id/title_of_song_playing"
@@ -49,6 +49,23 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="TITLE OF SONG PLAYING"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_of_song_playing"
+            android:paddingTop="10dp"
+            android:text="
+            DESCRIPTION OF ACTIVITY
+            This is main screen.
+            It allows to chose different features.
+            It also displays currently playing song" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="To play sound MediaPlayer class would be needed" />
 
     </RelativeLayout>
 

@@ -13,7 +13,16 @@
     <TextView
         android:id="@+id/label_catalogue"
         style="@style/LabelStyle"
-        android:text="@string/feature_search"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:text="@string/feature_search" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="70dp"
+        android:text="
+            Allows to search for songs. Should allow
+            to search by different categories like
+            title, year of release, artist, album etc." />
 
 </RelativeLayout>
